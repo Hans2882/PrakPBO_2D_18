@@ -5,6 +5,12 @@ public class anggota {
     private String Alamat;
     private float simpanan;
 
+    public anggota(String Nama, String Alamat) {
+    this.Nama = Nama;
+    this.Alamat = Alamat;
+    this.simpanan = 0;
+    }
+
     public void setNama(String nama) {
         this.Nama = nama;
     }
