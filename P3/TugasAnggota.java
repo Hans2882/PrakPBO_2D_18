@@ -32,7 +32,12 @@ public class TugasAnggota {
             pinjam += total;
         }
     }
+
     public void angsur(int total) {
-        pinjam -= total;
+        if (total >= 0.1 * pinjam) {
+            pinjam -= total;
+        } else {
+            System.out.println("Angsuran minimal 10% dari pinjaman");
+        }
     }
 }
